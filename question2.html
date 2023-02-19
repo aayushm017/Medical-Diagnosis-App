@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>2nd page</title>
+    <style>
+        textarea {
+            color: black;
+            align-self: center;
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+        }
+        h4 {
+            margin: 5vh 25vw 5vh 29vw;
+        }
+        html{
+            position:fixed;
+            background: #5EB7D2;
+            background: -webkit-radial-gradient(top left, #5EB7D2, #54AF20);
+            background: -moz-radial-gradient(top left, #5EB7D2, #54AF20);
+            background: radial-gradient(to bottom right, #5EB7D2, #54AF20);
+            background-size: 100% 350%;
+        }
+        form{
+            margin-left: 68.5vh; 
+            margin-top: 0vw; 
+            padding: 15px;
+        }
+        img{
+        height: 250px;
+        width: 250px;
+        margin-left: 520px;
+      }
+    </style>
+</head>
+<body>
+    <img src="SVG/2.svg">
+    <h4>Add as many symptoms as you can for the most accurate results.<br>
+        We will send you a treatment plan after submitting this form.
+        </h4>
+
+
+    <form action="https://formspree.io/f/xzbqrznw" method="POST">
+        <label for="name">Name &nbsp;&nbsp;: </label>
+        <input type="text" id="name" name="name" style="margin-bottom: 15px;" placeholder="CodeZin Tech" required autocomplete="off"><br>
+
+        <label for="name">Mobile : </label>
+        <input type="text" id="name" placeholder="123456789" name="name" style="margin-bottom: 15px;"><br>
+
+        <label for="email">Email &nbsp;: </label>
+        <input type="email" id="email" placeholder="codezintech@gmail.com" name="email" required><br>
+
+        <textarea style="margin-left: 55px; margin-top: 20px; width: 200px; height: 70px;">Add Your Symptoms</textarea>
+
+
+        <button style="margin-top: 20px; margin-left: 140px; border-radius: 10%; color:rgb(104, 90, 105)">Submit</button>
+
+    </form>
+
+</body>
+</html>
+

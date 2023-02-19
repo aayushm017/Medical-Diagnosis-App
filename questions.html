@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Check The Statements</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      h1 {
+        margin-top: 10vh;
+        text-align: center;
+      }
+
+      html {
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        background: #5EB7D2;
+        background: -webkit-radial-gradient(top left, #5EB7D2, #54AF20);
+        background: -moz-radial-gradient(top left, #5EB7D2, #54AF20);
+        background: radial-gradient(to bottom right, #5EB7D2, #54AF20);
+        color: black;
+      }
+      
+
+      .options {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60%;
+        transform: translateY(-50%);
+        color: black;
+        padding: 48px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+      }
+      .options input {
+        display: none;
+      }
+      .options > label {
+        display: inline-block;
+        position: relative;
+        margin-right: 16px;
+        padding-left: 24px;
+        cursor: pointer;
+      }
+      .options > label:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 50%;
+        margin-top: -8px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+      }
+      .options > label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 8px;
+        margin-top: 0;
+        background: #fff;
+        border-radius: 4px;
+        transition: 0.2s ease-in-out;
+      }
+      .options :checked + label:after {
+        height: 8px;
+        width: 8px;
+        margin-top: -4px;
+        left: 4px;
+      }
+      img{
+        height: 250px;
+        width: 250px;
+        margin-left: 20px;
+        margin-bottom: 350px;
+      }
+    </style>
+  </head>
+
+  <body class="html2pdf">
+
+    <h1>Please Check All The Statements Below That Apply To Her</h1>
+    <div class="options">
+
+      <img src="SVG/1.svg">
+
+    <div id="html2pdf" class="options">
+      <h2>
+        <small>He is overweight or obese</small>
+      </h2>
+      <input name="obese" type="radio" id="obese1" class="hide" />
+      <label for="obese1">Yes</label>
+
+      <input name="obese" type="radio" id="obese2" class="hide" />
+      <label for="obese2">No</label>
+
+      <input name="obese" type="radio" id="obese3" class="hide" />
+      <label for="obese3">I Don't Know</label>
+
+      <h2>
+        <small>He missed one or more doses of mandatory vaccinations</small>
+      </h2>
+      <input name="vaccinations" type="radio" id="vaccinations1" class="hide" />
+      <label for="vaccinations1">Yes</label>
+
+      <input name="vaccinations" type="radio" id="vaccinations2" class="hide" />
+      <label for="vaccinations2">No</label>
+
+      <input name="vaccinations" type="radio" id="vaccinations3" class="hide" />
+      <label for="vaccinations3">I Don't Know</label>
+
+      <h2>
+        <small
+          >He, or her parents, siblings or grandparents have an allergic
+          disease, e.g., asthma, atopic dermatitis, or a food allergy</small
+        >
+      </h2>
+      <input name="allergy" type="radio" id="allergy1" class="hide" />
+      <label for="allergy1">Yes</label>
+
+      <input name="allergy" type="radio" id="allergy2" class="hide" />
+      <label for="allergy2">No</label>
+
+      <input name="allergy" type="radio" id="allergy3" class="hide" />
+      <label for="allergy3">I Don't Know</label>
+      
+      <a href="question2.html">Next page..>></a>
+    </div>
+
+  </body>
+</html>
